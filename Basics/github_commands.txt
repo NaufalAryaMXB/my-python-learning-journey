@@ -1,0 +1,25 @@
+# Basic Git Commands Cheat Sheet
+
+# 1. Initialize a new local Git repository
+git init
+
+# 2. Add all new and changed files to the staging area
+git add .
+# (or add a specific file with: git add filename.py)
+
+# 3. Commit your changes with a descriptive message
+git commit -m "Your commit message here"
+
+# 4. Connect your local repository to a remote GitHub repository
+git remote add origin https://github.com/Username/RepositoryName.git
+
+# 5. Rename the branch to 'main'
+git branch -M main
+
+# 6. Push your code to the remote repository for the first time
+git push -u origin main
+
+# NOTE: For future updates, you usually just need:
+# git add .
+# git commit -m "Update message"
+# git push
