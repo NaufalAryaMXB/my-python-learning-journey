@@ -1,38 +1,38 @@
 #variables and data structure
 
-# name = "John" #string
+name = "John" #string
 
-# age = 30 #integer
+age = 30 #integer
 
-# has_license = True #boolean
+has_license = True #boolean
 
-# height = 5.9 #float
+height = 5.9 #float
 
 #print variables
-# print("Name:", name)
-# print("Age:", age)
-# print("Has License: ", has_license)
-# print("Height: ", height)
+print("Name:", name)
+print("Age:", age)
+print("Has License: ", has_license)
+print("Height: ", height)
 
 #user input
-# print('user Input')
-# nameinput = input("Name : ")
-# Ageinput = input("Age : ")
-# print("printing user input")
-# print("Name : ", nameinput)
-# print("Age : ", Ageinput)
+print('user Input')
+nameinput = input("Name : ")
+Ageinput = input("Age : ")
+print("printing user input")
+print("Name : ", nameinput)
+print("Age : ", Ageinput)
 
 #arithmetic operators
-# print("arithmetic operators")
-# num1 = 10
-# num2 = 20
-# print("num1 + num2 : ",int( num1 + num2)) #addition and force to  be integer
-# print("num1 - num2 : ", num1 - num2) #subtraction
-# print("num1 * num2 : ", num1 * num2) #multiplication
-# print("num1 / num2 : ", num1 / num2) #division
-# print("num1 % num2 : ", num1 % num2) #modulo
-# print("num1 ** num2 : ", num1 ** num2) #exponentiation
-# print("num1 // num2 : ", num1 // num2) #floor division
+print("arithmetic operators")
+num1 = 10
+num2 = 20
+print("num1 + num2 : ",int( num1 + num2)) #addition and force to  be integer
+print("num1 - num2 : ", num1 - num2) #subtraction
+print("num1 * num2 : ", num1 * num2) #multiplication
+print("num1 / num2 : ", num1 / num2) #division
+print("num1 % num2 : ", num1 % num2) #modulo
+print("num1 ** num2 : ", num1 ** num2) #exponentiation
+print("num1 // num2 : ", num1 // num2) #floor division
 
 #string methods
 string = '   hElLo pyThon 123   '
@@ -98,4 +98,40 @@ if nameif == "John"  :
 elif nameif ==  "Tim" :
     print("You're name is Tim")
 else : print("i dont know you're name")
+
+#list and tuples
+#list is a collection of elements grouped together and they are mutable meaning they could  be changed 
+list = [4, True, "Hi"] #this is a list identified by using [] 
+print(len(list)) #len used to look at the length 
+list.append('hello')  #add an elemnt   to the list
+list.extend([4,5,"Heloo"]) #appends a another list into the the end  of the current list
+list.pop() #delete an element at the end of the list
+list.pop(0) #delete an element from the list depending on the index (starting from 0)
+list[0] =  'Hello' #change an element depending on the index 
+
+#tuple are similar to list but they are immuatble meaning they cannot be edited and uses ()
+tuple = (0,3,2,2)
+tuple[0] = 5 #will error since tuple is immutable
+
+#you can't edit tuple but you can add tuples into  list
+listtuple = [5,"helo",(3,4,"Hello",[1,4,5,"hey"])]
+
+#Loops
+#for loops
+for numbers in range(10):  #for loops  will loop if the rule is valid so  in   this case its 0-9  (10 not in cluded)
+    print(numbers)
+
+for numbers in range(5,10,2): #and the range function can  have a collection  based on the input we give it
+                          #the input to range is (start,stop,step) (in this case its start:5,stop10,stesp2)  if only 1 input  that is stop if 2 inputs its start,stop
+    print(numbers)
+
+#While loops
+i = 0
+while i < 10: #while  loops as long as the condition is true it will  keep looping
+    print("run")
+    i += 1
+
+    
+
+
 
