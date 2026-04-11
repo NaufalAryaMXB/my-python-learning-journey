@@ -142,16 +142,43 @@
 # print(dict) 
 
 #sets
-set = set()
-s  =  {4,32,2,2}
-s2 =  {3,4,22,1}
-print(s)
-s.remove(32) #to delete an element from a set
-print(32 in  s) # to check if an element is inside the set
-print("this  is  difference: ",s.difference(s2)) #to check the difference of  s and s2 or meaning telling everything in s that isnt  in s2
-print("this  is  union:",s.union(s2)) #mash the two sets together
-print("this  is  intersection:",s.intersection(s2)) #giving the element that both have
-print("this  is  symmetric  difference:",s.symmetric_difference(s2))#mash the two together but delete the   one  that  both s and  s2 have
+# set = set()
+# s  =  {4,32,2,2}
+# s2 =  {3,4,22,1}
+# print(s)
+# s.remove(32) #to delete an element from a set
+# print(32 in  s) # to check if an element is inside the set
+# print("this  is  difference: ",s.difference(s2)) #to check the difference of  s and s2 or meaning telling everything in s that isnt  in s2
+# print("this  is  union:",s.union(s2)) #mash the two sets together
+# print("this  is  intersection:",s.intersection(s2)) #giving the element that both have
+# print("this  is  symmetric  difference:",s.symmetric_difference(s2))#mash the two together but delete the   one  that  both s and  s2 have
+
+
+# # Functions
+# # Functions allow you to bundle code into a reusable block so you don't have to rewrite the same math or logic.
+# def circle(r):
+#     L = (22/7) * r**2   # Calculate the area
+#     return L # 'return' gives the answer back to the code that called the function
+
+# user_radius = int(input("Enter radius number: "))
+# area_result = circle(user_radius) #it  will return here and 
+# print("Area of a circle with radius", user_radius, "is:", area_result)
+
+#Try and Except  
+try:  #try lets you test a block  of code for errors
+  print(x) #example here x is not defined
+except: #cause an error accured it will print an exception
+  print("An exception occurred")
+#else
+#the else lets you know if  no  error occurd
+try:
+  print("Hello")
+except:
+  print("Something went wrong")
+else:
+  print("Nothing went wrong")
+
+
 
 
 
