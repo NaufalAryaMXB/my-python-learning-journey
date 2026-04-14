@@ -1,14 +1,12 @@
-from openpyxl import Workbook      # Used to create a brand new file
-from openpyxl import load_workbook # Used to open an existing file
+from openpyxl import Workbook
+from openpyxl import load_workbook
 import datetime
 import os
 
 if os.path.exists("todolist.xlsx"):
-    # If it does, load it normally
     wb = load_workbook("todolist.xlsx")
     sheet = wb.active
 else:
-    # If it doesn't, create a brand new one and add our header row!
     wb = Workbook()
     sheet = wb.active
     sheet.append(["Time", "Task", "Status"])
